@@ -1,0 +1,26 @@
+{
+  "name": "dsh-lucy-companion",
+  "version": "0.1.0",
+  "private": true,
+  "description": "把右下角鲸鱼挂件的余额/今日已用/峰谷/每轮消耗接到左侧 Lucy 身上：复用 dsh-whale-widget 的宿主数据管线，只增加展示与交互，不改它的记账逻辑。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.4"
+  }
+}

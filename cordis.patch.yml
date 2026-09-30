@@ -1,0 +1,13 @@
+# ============================================================================
+# dsh-lucy-companion —— DSH bundle patch
+# ============================================================================
+# 与 @deepseek-ai/dsh-client-ui-brand-official 同构：宿主侧只有一个空 apply，
+# 真正的界面通过 exports["./client"] 由 Web 端加载。
+#
+# 安装：
+#   dsh plugin --profile desktop add link:E:\development\dsh-lucy-companion
+# ============================================================================
+
+- insert:
+    - id: lucy-companion
+      name: dsh-lucy-companion
